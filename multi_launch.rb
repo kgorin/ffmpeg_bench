@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'pathname'
 require 'pry'
 
 class NoInput < StandardError; end;
