@@ -1,0 +1,823 @@
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2012-07-31 10:56:03
+  Duration: 00:01:36.06, start: 0.000000, bitrate: 711 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 600 kb/s, 24 fps, 24 tbr, 24k tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 108 kb/s (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fec6c03c800] using SAR=34/45
+[libx264 @ 0x7fec6c03c800] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+[libx264 @ 0x7fec6c03c800] profile Main, level 3.1
+[libx264 @ 0x7fec6c03c800] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+[aac @ 0x7fec6c03b600] Input buffer exhausted before END element found
+Error while decoding stream #0:1: Invalid data found when processing input
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fec6c006600] stream 1, offset 0x10081: partial file
+files/0.mp4: Invalid data found when processing input
+frame=   28 fps=0.0 q=-1.0 Lsize=      62kB time=00:00:01.27 bitrate= 398.3kbits/s dup=3 drop=0    
+video:40kB audio:20kB subtitle:0 global headers:0kB muxing overhead 3.786631%
+[libx264 @ 0x7fec6c03c800] frame I:1     Avg QP: 3.23  size:   495
+[libx264 @ 0x7fec6c03c800] frame P:11    Avg QP:14.77  size:  3190
+[libx264 @ 0x7fec6c03c800] frame B:16    Avg QP:18.96  size:   284
+[libx264 @ 0x7fec6c03c800] consecutive B-frames: 17.9% 14.3% 10.7% 57.1%
+[libx264 @ 0x7fec6c03c800] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fec6c03c800] mb P  I16..4: 20.4%  0.0%  3.3%  P16..4:  5.3%  2.1%  0.5%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x7fec6c03c800] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8:  1.4%  0.4%  0.0%  direct: 0.9%  skip:97.1%  L0:30.7% L1:64.6% BI: 4.7%
+[libx264 @ 0x7fec6c03c800] coded y,uvDC,uvAC intra: 13.1% 18.0% 12.0% inter: 0.8% 2.2% 0.2%
+[libx264 @ 0x7fec6c03c800] i16 v,h,dc,p: 76% 19%  3%  2%
+[libx264 @ 0x7fec6c03c800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 34% 22%  2%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fec6c03c800] i8c dc,h,v,p: 78% 13%  8%  1%
+[libx264 @ 0x7fec6c03c800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fec6c03c800] kb/s:286.61
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf55.19.104
+  Duration: 00:00:01.26, start: 0.001837, bitrate: 405 kb/s
+    Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], 291 kb/s, 25 fps, 25 tbr, 12800 tbn, 50 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: mp3 (mp4a / 0x6134706D), 44100 Hz, stereo, s16p, 130 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fca130b9000] using SAR=34/45
+[libx264 @ 0x7fca130b9000] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+[libx264 @ 0x7fca130b9000] profile Main, level 3.1
+[libx264 @ 0x7fca130b9000] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, s16p (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (mp3 -> libmp3lame)
+Press [q] to stop, [?] for help
+[h264 @ 0x7fca13025400] AVC: nal size 7534
+    Last message repeated 1 times
+[h264 @ 0x7fca13025400] no frame!
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fca13006600] stream 1, offset 0x8ef6: partial file
+files/0.mp4: Invalid data found when processing input
+frame=   22 fps=0.0 q=-1.0 Lsize=      30kB time=00:00:00.81 bitrate= 305.4kbits/s    
+video:15kB audio:13kB subtitle:0 global headers:0kB muxing overhead 7.166597%
+[libx264 @ 0x7fca130b9000] frame I:1     Avg QP: 3.23  size:   486
+[libx264 @ 0x7fca130b9000] frame P:7     Avg QP:17.39  size:  1985
+[libx264 @ 0x7fca130b9000] frame B:14    Avg QP:20.00  size:    29
+[libx264 @ 0x7fca130b9000] consecutive B-frames: 13.6%  0.0% 13.6% 72.7%
+[libx264 @ 0x7fca130b9000] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fca130b9000] mb P  I16..4: 14.9%  0.0%  4.2%  P16..4:  1.0%  0.4%  0.1%  0.0%  0.0%    skip:79.4%
+[libx264 @ 0x7fca130b9000] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 0.0%  skip:100.0%
+[libx264 @ 0x7fca130b9000] coded y,uvDC,uvAC intra: 11.7% 13.8% 7.5% inter: 0.1% 0.2% 0.0%
+[libx264 @ 0x7fca130b9000] i16 v,h,dc,p: 80% 15%  3%  2%
+[libx264 @ 0x7fca130b9000] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 33% 21%  3%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fca130b9000] i8c dc,h,v,p: 81% 11%  7%  1%
+[libx264 @ 0x7fca130b9000] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fca130b9000] kb/s:134.50
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf55.19.104
+  Duration: 00:00:00.88, start: 0.025057, bitrate: 281 kb/s
+    Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], 140 kb/s, 25 fps, 25 tbr, 12800 tbn, 50 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: mp3 (mp4a / 0x6134706D), 44100 Hz, stereo, s16p, 128 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fd40b0b8a00] using SAR=34/45
+[libx264 @ 0x7fd40b0b8a00] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+[libx264 @ 0x7fd40b0b8a00] profile Main, level 3.1
+[libx264 @ 0x7fd40b0b8a00] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, s16p (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (mp3 -> libmp3lame)
+Press [q] to stop, [?] for help
+frame=   23 fps=0.0 q=-1.0 Lsize=      31kB time=00:00:00.84 bitrate= 299.3kbits/s dup=1 drop=0    
+video:15kB audio:13kB subtitle:0 global headers:0kB muxing overhead 7.138474%
+[libx264 @ 0x7fd40b0b8a00] frame I:1     Avg QP: 3.23  size:   483
+[libx264 @ 0x7fd40b0b8a00] frame P:7     Avg QP:17.37  size:  1986
+[libx264 @ 0x7fd40b0b8a00] frame B:15    Avg QP:20.00  size:    30
+[libx264 @ 0x7fd40b0b8a00] consecutive B-frames: 13.0%  0.0%  0.0% 87.0%
+[libx264 @ 0x7fd40b0b8a00] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fd40b0b8a00] mb P  I16..4: 14.7%  0.0%  4.2%  P16..4:  1.0%  0.4%  0.1%  0.0%  0.0%    skip:79.5%
+[libx264 @ 0x7fd40b0b8a00] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 0.0%  skip:100.0%  L0: 0.0% L1:100.0% BI: 0.0%
+[libx264 @ 0x7fd40b0b8a00] coded y,uvDC,uvAC intra: 11.6% 13.8% 7.4% inter: 0.1% 0.2% 0.0%
+[libx264 @ 0x7fd40b0b8a00] i16 v,h,dc,p: 80% 15%  3%  2%
+[libx264 @ 0x7fd40b0b8a00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 33% 33% 20%  3%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fd40b0b8a00] i8c dc,h,v,p: 82% 11%  6%  1%
+[libx264 @ 0x7fd40b0b8a00] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fd40b0b8a00] kb/s:128.93
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2012-07-31 10:56:03
+  Duration: 00:01:36.06, start: 0.000000, bitrate: 711 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 600 kb/s, 24 fps, 24 tbr, 24k tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 108 kb/s (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fc25b83c800] using SAR=34/45
+[libx264 @ 0x7fc25b83c800] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+[libx264 @ 0x7fc25b83c800] profile Main, level 3.1
+[libx264 @ 0x7fc25b83c800] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+[aac @ 0x7fc25b83b600] Input buffer exhausted before END element found
+Error while decoding stream #0:1: Invalid data found when processing input
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fc25b806600] stream 1, offset 0x10081: partial file
+files/0.mp4: Invalid data found when processing input
+frame=   28 fps=0.0 q=-1.0 Lsize=      62kB time=00:00:01.27 bitrate= 398.3kbits/s dup=3 drop=0    
+video:40kB audio:20kB subtitle:0 global headers:0kB muxing overhead 3.786631%
+[libx264 @ 0x7fc25b83c800] frame I:1     Avg QP: 3.23  size:   495
+[libx264 @ 0x7fc25b83c800] frame P:11    Avg QP:14.77  size:  3190
+[libx264 @ 0x7fc25b83c800] frame B:16    Avg QP:18.96  size:   284
+[libx264 @ 0x7fc25b83c800] consecutive B-frames: 17.9% 14.3% 10.7% 57.1%
+[libx264 @ 0x7fc25b83c800] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fc25b83c800] mb P  I16..4: 20.4%  0.0%  3.3%  P16..4:  5.3%  2.1%  0.5%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x7fc25b83c800] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8:  1.4%  0.4%  0.0%  direct: 0.9%  skip:97.1%  L0:30.7% L1:64.6% BI: 4.7%
+[libx264 @ 0x7fc25b83c800] coded y,uvDC,uvAC intra: 13.1% 18.0% 12.0% inter: 0.8% 2.2% 0.2%
+[libx264 @ 0x7fc25b83c800] i16 v,h,dc,p: 76% 19%  3%  2%
+[libx264 @ 0x7fc25b83c800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 34% 22%  2%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fc25b83c800] i8c dc,h,v,p: 78% 13%  8%  1%
+[libx264 @ 0x7fc25b83c800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fc25b83c800] kb/s:286.61
+appending output to nohup.out
+appending output to nohup.out
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/1.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2012-07-31 10:56:03
+  Duration: 00:01:36.06, start: 0.000000, bitrate: 711 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 600 kb/s, 24 fps, 24 tbr, 24k tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 108 kb/s (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Please use -profile:a or -profile:v, -profile is ambiguous
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2012-07-31 10:56:03
+  Duration: 00:01:36.06, start: 0.000000, bitrate: 711 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 600 kb/s, 24 fps, 24 tbr, 24k tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 108 kb/s (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fb39183c800] using SAR=34/45
+[libx264 @ 0x7fb39183c800] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+[libx264 @ 0x7fad5103c800] using SAR=34/45
+[libx264 @ 0x7fad5103c800] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2012-07-31 10:56:03
+  Duration: 00:01:36.06, start: 0.000000, bitrate: 711 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 600 kb/s, 24 fps, 24 tbr, 24k tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 108 kb/s (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fb39183c800] profile Main, level 3.1
+[libx264 @ 0x7fb39183c800] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[libx264 @ 0x7fd83383c800] using SAR=34/45
+[libx264 @ 0x7fd83383c800] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+Output #0, mp4, to 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+[libx264 @ 0x7fad5103c800] profile Main, level 3.1
+[libx264 @ 0x7fad5103c800] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[libx264 @ 0x7fd83383c800] profile Main, level 3.1
+[libx264 @ 0x7fd83383c800] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'files/1.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+Output #0, mp4, to 'files/2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+frame=   22 fps=0.0 q=20.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=3 drop=0    frame=   19 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=3 drop=0    frame=   22 fps=0.0 q=20.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=3 drop=0    [aac @ 0x7fb39183b600] Input buffer exhausted before END element found
+Error while decoding stream #0:1: Invalid data found when processing input
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fb391806600] stream 1, offset 0x10081: partial file
+files/0.mp4: Invalid data found when processing input
+[aac @ 0x7fad5103b600] Input buffer exhausted before END element found
+Error while decoding stream #0:1: Invalid data found when processing input
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fad51006600] stream 1, offset 0x10081: partial file
+files/1.mp4: Invalid data found when processing input
+[aac @ 0x7fd83383b600] Input buffer exhausted before END element found
+Error while decoding stream #0:1: Invalid data found when processing input
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd833806600] stream 1, offset 0x10081: partial file
+files/2.mp4: Invalid data found when processing input
+frame=   28 fps= 27 q=-1.0 Lsize=      62kB time=00:00:01.27 bitrate= 398.3kbits/s dup=3 drop=0    
+video:40kB audio:20kB subtitle:0 global headers:0kB muxing overhead 3.786631%
+[libx264 @ 0x7fb39183c800] frame I:1     Avg QP: 3.23  size:   495
+[libx264 @ 0x7fb39183c800] frame P:11    Avg QP:14.77  size:  3190
+[libx264 @ 0x7fb39183c800] frame B:16    Avg QP:18.96  size:   284
+[libx264 @ 0x7fb39183c800] consecutive B-frames: 17.9% 14.3% 10.7% 57.1%
+[libx264 @ 0x7fb39183c800] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fb39183c800] mb P  I16..4: 20.4%  0.0%  3.3%  P16..4:  5.3%  2.1%  0.5%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x7fb39183c800] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8:  1.4%  0.4%  0.0%  direct: 0.9%  skip:97.1%  L0:30.7% L1:64.6% BI: 4.7%
+[libx264 @ 0x7fb39183c800] coded y,uvDC,uvAC intra: 13.1% 18.0% 12.0% inter: 0.8% 2.2% 0.2%
+[libx264 @ 0x7fb39183c800] i16 v,h,dc,p: 76% 19%  3%  2%
+[libx264 @ 0x7fb39183c800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 34% 22%  2%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fb39183c800] i8c dc,h,v,p: 78% 13%  8%  1%
+[libx264 @ 0x7fb39183c800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fb39183c800] kb/s:286.61
+frame=   28 fps= 23 q=-1.0 Lsize=      62kB time=00:00:01.27 bitrate= 398.3kbits/s dup=3 drop=0    
+video:40kB audio:20kB subtitle:0 global headers:0kB muxing overhead 3.786631%
+[libx264 @ 0x7fd83383c800] frame I:1     Avg QP: 3.23  size:   495
+[libx264 @ 0x7fd83383c800] frame P:11    Avg QP:14.77  size:  3190
+[libx264 @ 0x7fd83383c800] frame B:16    Avg QP:18.96  size:   284
+[libx264 @ 0x7fd83383c800] consecutive B-frames: 17.9% 14.3% 10.7% 57.1%
+[libx264 @ 0x7fd83383c800] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fd83383c800] mb P  I16..4: 20.4%  0.0%  3.3%  P16..4:  5.3%  2.1%  0.5%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x7fd83383c800] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8:  1.4%  0.4%  0.0%  direct: 0.9%  skip:97.1%  L0:30.7% L1:64.6% BI: 4.7%
+[libx264 @ 0x7fd83383c800] coded y,uvDC,uvAC intra: 13.1% 18.0% 12.0% inter: 0.8% 2.2% 0.2%
+[libx264 @ 0x7fd83383c800] i16 v,h,dc,p: 76% 19%  3%  2%
+[libx264 @ 0x7fd83383c800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 34% 22%  2%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fd83383c800] i8c dc,h,v,p: 78% 13%  8%  1%
+[libx264 @ 0x7fd83383c800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fd83383c800] kb/s:286.61
+frame=   28 fps= 23 q=-1.0 Lsize=      62kB time=00:00:01.27 bitrate= 398.3kbits/s dup=3 drop=0    
+video:40kB audio:20kB subtitle:0 global headers:0kB muxing overhead 3.786631%
+[libx264 @ 0x7fad5103c800] frame I:1     Avg QP: 3.23  size:   495
+[libx264 @ 0x7fad5103c800] frame P:11    Avg QP:14.77  size:  3190
+[libx264 @ 0x7fad5103c800] frame B:16    Avg QP:18.96  size:   284
+[libx264 @ 0x7fad5103c800] consecutive B-frames: 17.9% 14.3% 10.7% 57.1%
+[libx264 @ 0x7fad5103c800] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fad5103c800] mb P  I16..4: 20.4%  0.0%  3.3%  P16..4:  5.3%  2.1%  0.5%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x7fad5103c800] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8:  1.4%  0.4%  0.0%  direct: 0.9%  skip:97.1%  L0:30.7% L1:64.6% BI: 4.7%
+[libx264 @ 0x7fad5103c800] coded y,uvDC,uvAC intra: 13.1% 18.0% 12.0% inter: 0.8% 2.2% 0.2%
+[libx264 @ 0x7fad5103c800] i16 v,h,dc,p: 76% 19%  3%  2%
+[libx264 @ 0x7fad5103c800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 34% 22%  2%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fad5103c800] i8c dc,h,v,p: 78% 13%  8%  1%
+[libx264 @ 0x7fad5103c800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fad5103c800] kb/s:286.61
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2012-07-31 10:56:03
+  Duration: 00:01:36.06, start: 0.000000, bitrate: 711 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 600 kb/s, 24 fps, 24 tbr, 24k tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 108 kb/s (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fed3a03c800] using SAR=34/45
+[libx264 @ 0x7fed3a03c800] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+[libx264 @ 0x7fed3a03c800] profile Main, level 3.1
+[libx264 @ 0x7fed3a03c800] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'files/0.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+[aac @ 0x7fed3a03b600] Input buffer exhausted before END element found
+Error while decoding stream #0:1: Invalid data found when processing input
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fed3a006600] stream 1, offset 0x10081: partial file
+files/0.mp4: Invalid data found when processing input
+frame=   28 fps=0.0 q=-1.0 Lsize=      62kB time=00:00:01.27 bitrate= 398.3kbits/s dup=3 drop=0    
+video:40kB audio:20kB subtitle:0 global headers:0kB muxing overhead 3.786631%
+[libx264 @ 0x7fed3a03c800] frame I:1     Avg QP: 3.23  size:   495
+[libx264 @ 0x7fed3a03c800] frame P:11    Avg QP:14.77  size:  3190
+[libx264 @ 0x7fed3a03c800] frame B:16    Avg QP:18.96  size:   284
+[libx264 @ 0x7fed3a03c800] consecutive B-frames: 17.9% 14.3% 10.7% 57.1%
+[libx264 @ 0x7fed3a03c800] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fed3a03c800] mb P  I16..4: 20.4%  0.0%  3.3%  P16..4:  5.3%  2.1%  0.5%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x7fed3a03c800] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8:  1.4%  0.4%  0.0%  direct: 0.9%  skip:97.1%  L0:30.7% L1:64.6% BI: 4.7%
+[libx264 @ 0x7fed3a03c800] coded y,uvDC,uvAC intra: 13.1% 18.0% 12.0% inter: 0.8% 2.2% 0.2%
+[libx264 @ 0x7fed3a03c800] i16 v,h,dc,p: 76% 19%  3%  2%
+[libx264 @ 0x7fed3a03c800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 34% 22%  2%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fed3a03c800] i8c dc,h,v,p: 78% 13%  8%  1%
+[libx264 @ 0x7fed3a03c800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fed3a03c800] kb/s:286.61
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/1.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2012-07-31 10:56:03
+  Duration: 00:01:36.06, start: 0.000000, bitrate: 711 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 600 kb/s, 24 fps, 24 tbr, 24k tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 108 kb/s (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fbe1b83c800] using SAR=34/45
+[libx264 @ 0x7fbe1b83c800] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+[libx264 @ 0x7fbe1b83c800] profile Main, level 3.1
+[libx264 @ 0x7fbe1b83c800] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'files/1.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+[aac @ 0x7fbe1b83b600] Input buffer exhausted before END element found
+Error while decoding stream #0:1: Invalid data found when processing input
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fbe1b806600] stream 1, offset 0x10081: partial file
+files/1.mp4: Invalid data found when processing input
+appending output to nohup.out
+frame=   28 fps=0.0 q=-1.0 Lsize=      62kB time=00:00:01.27 bitrate= 398.3kbits/s dup=3 drop=0    
+video:40kB audio:20kB subtitle:0 global headers:0kB muxing overhead 3.786631%
+[libx264 @ 0x7fbe1b83c800] frame I:1     Avg QP: 3.23  size:   495
+[libx264 @ 0x7fbe1b83c800] frame P:11    Avg QP:14.77  size:  3190
+[libx264 @ 0x7fbe1b83c800] frame B:16    Avg QP:18.96  size:   284
+[libx264 @ 0x7fbe1b83c800] consecutive B-frames: 17.9% 14.3% 10.7% 57.1%
+[libx264 @ 0x7fbe1b83c800] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fbe1b83c800] mb P  I16..4: 20.4%  0.0%  3.3%  P16..4:  5.3%  2.1%  0.5%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x7fbe1b83c800] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8:  1.4%  0.4%  0.0%  direct: 0.9%  skip:97.1%  L0:30.7% L1:64.6% BI: 4.7%
+[libx264 @ 0x7fbe1b83c800] coded y,uvDC,uvAC intra: 13.1% 18.0% 12.0% inter: 0.8% 2.2% 0.2%
+[libx264 @ 0x7fbe1b83c800] i16 v,h,dc,p: 76% 19%  3%  2%
+[libx264 @ 0x7fbe1b83c800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 34% 22%  2%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fbe1b83c800] i8c dc,h,v,p: 78% 13%  8%  1%
+[libx264 @ 0x7fbe1b83c800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fbe1b83c800] kb/s:286.61
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2012-07-31 10:56:03
+  Duration: 00:01:36.06, start: 0.000000, bitrate: 711 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 600 kb/s, 24 fps, 24 tbr, 24k tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 108 kb/s (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Please use -profile:a or -profile:v, -profile is ambiguous
+[libx264 @ 0x7fd86183c800] using SAR=34/45
+[libx264 @ 0x7fd86183c800] using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.2
+[libx264 @ 0x7fd86183c800] profile Main, level 3.1
+[libx264 @ 0x7fd86183c800] 264 - core 125 - H.264/MPEG-4 AVC codec - Copyleft 2003-2012 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=20 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'files/2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    encoder         : Lavf55.19.104
+    Stream #0:0(und): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x544 [SAR 34:45 DAR 16:9], q=-1-20, 12800 tbn, 25 tbc (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (libmp3lame) (i[0][0][0] / 0x0069), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      creation_time   : 2012-07-31 10:56:03
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 -> libx264)
+  Stream #0:1 -> #0:1 (aac -> libmp3lame)
+Press [q] to stop, [?] for help
+[aac @ 0x7fd86183b600] Input buffer exhausted before END element found
+Error while decoding stream #0:1: Invalid data found when processing input
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fd861806600] stream 1, offset 0x10081: partial file
+files/2.mp4: Invalid data found when processing input
+frame=   28 fps=0.0 q=-1.0 Lsize=      62kB time=00:00:01.27 bitrate= 398.3kbits/s dup=3 drop=0    
+video:40kB audio:20kB subtitle:0 global headers:0kB muxing overhead 3.786631%
+[libx264 @ 0x7fd86183c800] frame I:1     Avg QP: 3.23  size:   495
+[libx264 @ 0x7fd86183c800] frame P:11    Avg QP:14.77  size:  3190
+[libx264 @ 0x7fd86183c800] frame B:16    Avg QP:18.96  size:   284
+[libx264 @ 0x7fd86183c800] consecutive B-frames: 17.9% 14.3% 10.7% 57.1%
+[libx264 @ 0x7fd86183c800] mb I  I16..4: 99.7%  0.0%  0.3%
+[libx264 @ 0x7fd86183c800] mb P  I16..4: 20.4%  0.0%  3.3%  P16..4:  5.3%  2.1%  0.5%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x7fd86183c800] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8:  1.4%  0.4%  0.0%  direct: 0.9%  skip:97.1%  L0:30.7% L1:64.6% BI: 4.7%
+[libx264 @ 0x7fd86183c800] coded y,uvDC,uvAC intra: 13.1% 18.0% 12.0% inter: 0.8% 2.2% 0.2%
+[libx264 @ 0x7fd86183c800] i16 v,h,dc,p: 76% 19%  3%  2%
+[libx264 @ 0x7fd86183c800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 34% 22%  2%  3%  2%  4%  2%  1%
+[libx264 @ 0x7fd86183c800] i8c dc,h,v,p: 78% 13%  8%  1%
+[libx264 @ 0x7fd86183c800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7fd86183c800] kb/s:286.61
+appending output to nohup.out
+appending output to nohup.out
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_0.mp4: No such file or directory
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_1.mp4: No such file or directory
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_2.mp4: No such file or directory
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_0.mp4: No such file or directory
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_0.mp4: No such file or directory
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_1.mp4: No such file or directory
+appending output to nohup.out
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_2.mp4: No such file or directory
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_1.mp4: No such file or directory
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_2.mp4: No such file or directory
+ffmpeg version 2.1 Copyright (c) 2000-2013 the FFmpeg developers
+  built on Nov 27 2013 19:45:22 with Apple LLVM version 4.2 (clang-425.0.28) (based on LLVM 3.2svn)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/2.1 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-nonfree --enable-hardcoded-tables --enable-avresample --enable-vda --cc=clang --host-cflags= --host-ldflags= --enable-libx264 --enable-libfaac --enable-libmp3lame --enable-libxvid --enable-libfreetype
+  libavutil      52. 48.100 / 52. 48.100
+  libavcodec     55. 39.100 / 55. 39.100
+  libavformat    55. 19.104 / 55. 19.104
+  libavdevice    55.  5.100 / 55.  5.100
+  libavfilter     3. 90.100 /  3. 90.100
+  libavresample   1.  1.  0 /  1.  1.  0
+  libswscale      2.  5.101 /  2.  5.101
+  libswresample   0. 17.104 /  0. 17.104
+  libpostproc    52.  3.100 / 52.  3.100
+files/in_0.mp4: No such file or directory
